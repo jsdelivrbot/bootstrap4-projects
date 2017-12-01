@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/bootstrap-basic-application.iml" filepath="$PROJECT_DIR$/.idea/bootstrap-basic-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bootstrap-landing-application.iml" filepath="$PROJECT_DIR$/.idea/bootstrap-landing-application.iml" />
     </modules>
   </component>
 </project>

@@ -1,3 +1,23 @@
+@media(max-width: 48em) {
+    nav .btn-group {
+        position: absolute;
+        top: 0;
+        right: 4em;
+    }
+}
+
+body {
+    padding-top: 3.6em;
+}
+
+#nav-menu {
+    margin-right: 1rem;
+}
+
+nav .btn-group {
+    margin: 0.8rem 2rem 0 0;
+}
+
 pre {
     margin-top: 3.44rem;
 }
