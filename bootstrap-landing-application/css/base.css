@@ -73,3 +73,110 @@ section#features .feature {
     padding-bottom: 4rem;
     text-align: center;
 }
+
+section#pricing h3.price-headline {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+section#pricing .white-text {
+    color: #FFF;
+}
+
+section#pricing thead .success {
+    background-color: #78CFBF;
+}
+
+section#pricing thead .info {
+    background-color: #3EC6E0;
+}
+
+section#pricing thead .danger {
+    background-color: #E3536C;
+}
+
+section#pricing tbody .success {
+    background-color: #82DACA;
+}
+
+section#pricing tbody .info {
+    background-color: #53CFE9;
+}
+
+section#pricing tbody .danger {
+    background-color: #EB6379;
+}
+
+section#pricing .center-block {
+    width: 90%;
+}
+
+footer {
+    background-color: #191919;
+    color: #ADADAD;
+    margin-top: 3em;
+}
+
+footer h5,
+footer img {
+    margin-top: 5em;
+    font-weight: bold;
+}
+
+footer address {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    color: #5A5A5A;
+}
+
+footer ul {
+    margin-bottom: 5em;
+}
+
+footer address strong {
+    color: #ADADAD;
+    display: block;
+    padding-bottom: 0.62em;
+}
+
+footer a {
+    font-weight: 300;
+    color: #5A5A5A;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+section#newsletter {
+    border-top: 1px solid #E0E0E0;
+    padding-top: 3.2em;
+    margin-top: 2em;
+}
+
+section#newsletter h4 {
+    padding: 1em;
+}
+
+section#newsletter form {
+    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 5.5em;
+}
+
+section#contact form {
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+}
+
+section#team ul {
+    margin: 5rem 0;
+}
+
+section#team li {
+    margin: 0 5rem;
+}
+
+section#team 
+
