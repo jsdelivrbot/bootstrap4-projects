@@ -103,7 +103,9 @@
     <div class="container">
       <div class="row">
 
+        <!--body's left side section-->
         <div id="profile" class="col-md-3 hidden-sm hidden-xs">
+
           <div id="profile-resume" class="card">
             <img src="imgs/landscape.jpg" class="card-img-top img-responsive">
             <div class="card-block">
@@ -132,10 +134,62 @@
               </ul>
             </div>
           </div>
+
+          <div id="profile-photo" class="card">
+            <div class="card-header">Photos</div>
+            <div class="card-block">
+              <ul class="list-inline list-unstyled">
+                <li>
+                  <a href="#" class="thumbnail"><img class="img-responsive" src="imgs/landscape-02.jpg"></a>
+                </li>
+                <li>
+                  <a href="#" class="thumbnail"><img class="img-responsive" src="imgs/landscape-03.jpg"></a>
+                </li>
+                <li>
+                  <a href="#" class="thumbnail"><img class="img-responsive" src="imgs/landscape-04.jpg"></a>
+                </li>
+                <li>
+                  <a href="#" class="thumbnail"><img class="img-responsive" src="imgs/landscape-05.jpg"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
 
-        <div id="main" class="col-sm-12 col-md-6"></div>
+        <!--body's middle section-->
+        <div id="main" class="col-sm-12 col-md-6">
 
+          <div id="main-card" class="card">
+            <form id="new-message">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="What is happening?">
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+                </span>
+              </div>
+            </form>
+            <ul id="feed" class="list-unstyled">
+              <li>
+                <img src="imgs/doge.jpg" class="feed-avatar img-circle">
+                <div class="feed-post">
+                  <h5>Name <small>@namex -3h</small></h5>
+                  <p>You can't hold a dog down without staying down with him!</p>
+                </div>
+                <div class="action-list">
+                  <a href="#"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                    <span class="retweet-count">6</span>
+                  </a>
+                  <a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--body's right side section-->
         <div id="right-content" class="col-md-3 hidden-sm hidden-xs"></div>
 
       </div>
