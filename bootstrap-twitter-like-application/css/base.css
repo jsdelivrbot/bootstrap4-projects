@@ -203,3 +203,10 @@ ul#feed .action-list .retweet-count {
     padding-left: 0.2em;
     font-weight: bold;
 }
+ul#feed li {
+    padding: 1em 1em;
+    border-bottom: 0.1rem solid #e5e5e5;
+}
+ul#feed li:last-child {
+    border-bottom: none;
+}
