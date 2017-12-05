@@ -113,9 +113,10 @@ body {
 }
 
 .card {
-    position: absolute;
+    position: relative;
     border: 0.1rem solid #e5e5e5;
     border-radius: 0.4rem;
+    position: relative;
     background-color: #FFF;
 }
 .card-img-top {
@@ -156,7 +157,7 @@ body {
     font-weight: bold;
 }
 #profile-photo {
-    margin-top: 36rem;
+    margin-top: 2rem;
 }
 #profile-photo ul {
     margin: 0;
@@ -209,4 +210,40 @@ ul#feed li {
 }
 ul#feed li:last-child {
     border-bottom: none;
+}
+
+div#who-follow li {
+    margin-bottom: 2em;
+}
+div#who-follow li:last-child {
+    margin-bottom: 0;
+}
+div#who-follow li img {
+    width: 26%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+}
+div#who-follow li .info {
+    width: 68%;
+    display: inline-block;
+}
+div#who-follow li .info strong {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+div#who-follow li .info .glyphicon {
+    color: #2F92CA;
+}
+
+.card .card-footer {
+    border-radius: 0 0 0.4rem 0.4rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #f5f5f5;
+    border-top: 0.1em solid #e5e5e5;
+    color: #4e5665;
+}
+div#app-info {
+    margin-top: 2rem;
 }

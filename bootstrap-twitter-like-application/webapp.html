@@ -160,6 +160,13 @@
         <!--body's middle section-->
         <div id="main" class="col-sm-12 col-md-6">
 
+          <!--Breadcrumb-->
+          <ol class="breadcrumb card">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li class="active">Feed</li>
+          </ol>
+
           <div id="main-card" class="card">
             <form id="new-message">
               <div class="input-group">
@@ -202,10 +209,76 @@
               </li>
             </ul>
           </div>
+
+          <!--pagination-->
+          <nav class="text-center">
+            <ul class="pagination pagination-lg">
+              <li class="disabled">
+                <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+              </li>
+              <li class="active">
+                <a href="#">1  <span class="sr-only">(current)</span></a>
+              </li>
+              <li><a href="#">2</a></li>
+              <li class="disabled"><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li>
+                <a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+              </li>
+            </ul>
+          </nav>
+
         </div>
 
         <!--body's right side section-->
-        <div id="right-content" class="col-md-3 hidden-sm hidden-xs"></div>
+        <div id="right-content" class="col-md-3 hidden-sm hidden-xs">
+
+          <div id="who-follow" class="card">
+            <div class="card-header">Who to follow</div>
+            <div class="card-block">
+              <ul class="list-unstyled">
+                <li>
+                  <img src="imgs/cat.jpg" class="img-rounded">
+                  <div class="info">
+                    <strong>Crazy cats</strong>
+                    <button class="btn btn-default">
+                      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      Follow
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <img src="imgs/ration.jpg" class="img-rounded">
+                  <div class="info">
+                    <strong>Free ration alert</strong>
+                    <button class="btn btn-default">
+                      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      Follow
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="app-info" class="card">
+            <div class="card-block">
+                © 2015 SampleApp
+                <ul class="list-unstyled list-inline">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Terms and Privacy</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Status</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#">Connect other address book</a>
+            </div>
+          </div>
+
+        </div>
 
       </div>
     </div>
