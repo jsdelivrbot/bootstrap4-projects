@@ -247,3 +247,23 @@ div#who-follow li .info .glyphicon {
 div#app-info {
     margin-top: 2rem;
 }
+
+.alert h3 {
+    margin: 0 0 1rem;
+    font-size: 1.4em;
+}
+.alert {
+    border-left-width: 0.5rem;
+}
+
+@keyframes w70 {
+    from { width: 0%; }
+    to {width: 70%; }
+}
+.progress-bar .active {
+    animation: w70 1s ease forwards, progress-bar-stripes 2s linear infinite;
+}
+
+.row .card + .card {
+    margin-top: 2rem;
+}
