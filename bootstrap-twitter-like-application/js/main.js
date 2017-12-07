@@ -1,25 +1,45 @@
 $(document).ready(function(){
+    var $charCount, maxCharCount;
 
-    $('#contact form').on('submit', function(e){
-        e.preventDefault();
+    $charCount = $("#tweet-modal .char-count")
+    maxCharCount = parseInt($charCount.data("max"), 10);
 
-        var $form = $(e.currentTarget),
-            $email = $form.find('#contact-email'),
-            $button = $form.find('button[type=submit]');
-
-        if($email.val().indexOf('@') == -1) {
-            vaca = $email.closest('form-group')
-            $email.closest('.form-group').addClass('has-error');
-        } else {
-            $form.find('.form-group').addClass('has-success').removeClass('has-error');
-            $button.attr('disabled', 'disabled');
-            $button.after('<span>Message sent. We will contact you soon.</span>');
-        }
-
+    $("#tweet-modal textarea").on("keyup", function(e){
+        var tweetLength = $(e.currentTarget).val().length;
+        $charCount.html(maxCharCount - tweetLength);
     });
 
-    $("#sign-btn").on("click", function(e){
-        $(e.currentTarget).closest('ul').hide();
-        $('form#signin').fadeIn('fast');
-    })
+    $('[data-toggle="tooltip"]').tooltip();
+
+    var popoverContentTemplate = '<img src="imgs/breed.jpg" class="img-rounded">'+ 
+    '<div class="info">' + 
+    '<strong>Dog Breeds</strong>' +
+    '<a href="#" class="btn btn-default">' +
+    '<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>'+
+    'Follow' +
+    '</a>' +
+    '</div>';
+
+    $('[data-toggle="popover"]').popover({
+        placement: 'bottom',
+        html: true,
+        content: function(){
+            return popoverContentTemplate;
+        }
+    });
+
+    $('[data-toggle="popover"]').on('show.bs.popover', function(){
+        var $icon = $(this).find('span.glyphicon');
+
+        $icon.removeClass('glyphicon-plus').addClass('glyphicon-ok');
+        $(this).append('ing');
+    });
+
+    $('#profile').on('affix.bs.affix', function() {
+        $(this).width($(this).width() - 1);
+            $('#main').addClass('col-md-offset-3');
+        }).on('affix-top.bs.affix', function() {
+            $(this).css('width', '');
+            $('#main').removeClass('col-md-offset-3');
+    });
 });

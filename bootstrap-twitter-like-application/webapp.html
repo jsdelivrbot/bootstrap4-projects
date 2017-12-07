@@ -31,10 +31,11 @@
             <span class="icon-bar"></span>
           </button>
           <!--<a class="btn btn-primary navbar-btn pull-left" href="#" role="button">Sign up</a>-->
-          <button id="tweet" class="btn btn-default pull-right visible-xs-block">
+          <!-- modal launch button -->
+          <button id="tweet" class="btn btn-default pull-right visible-xs-block" data-toggle="modal" data-target="#tweet-modal">
             <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
             Tweet
-          </button>
+          </button> 
         </div>
 
         <!--navbar menu-->
@@ -52,7 +53,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" role="button" data-toggle="modal" data-target="#messages-modal">
                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Messages
               </a>
             </li>
@@ -104,7 +105,7 @@
       <div class="row">
 
         <!--body's left side section-->
-        <div id="profile" class="col-md-3 hidden-sm hidden-xs">
+        <div id="profile" class="col-md-3 hidden-sm hidden-xs" data-spy="affix" data-offset-top="0">
 
           <div id="profile-resume" class="card">
             <img src="imgs/landscape.jpg" class="card-img-top img-responsive">
@@ -179,7 +180,7 @@
           </div>
           -->
 
-          <!--Progress bar-->
+          <!--Progress bar
           <div class="alert alert-info" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -189,6 +190,7 @@
               <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
             </div>
           </div>
+          -->
 
           <div id="main-card" class="card">
             <form id="new-message">
@@ -207,12 +209,16 @@
                   <p>You can't hold a dog down without staying down with him!</p>
                 </div>
                 <div class="action-list">
-                  <a href="#"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a>
-                  <a href="#">
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Reply">
+                    <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Retweet">
                     <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
                     <span class="retweet-count">6</span>
                   </a>
-                  <a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a>
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Star">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </a>
                 </div>
               </li>
               <li>
@@ -222,12 +228,16 @@
                   <p>That's one small step for a dog, one giant leap for giant</p>
                 </div>
                 <div class="action-list">
-                  <a href="#"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a>
-                  <a href="#">
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Reply">
+                    <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Retweet">
                     <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
                     <span class="retweet-count">6</span>
                   </a>
-                  <a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a>
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Star">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </a>
                 </div>
               </li>
             </ul>
@@ -265,20 +275,20 @@
                   <img src="imgs/cat.jpg" class="img-rounded">
                   <div class="info">
                     <strong>Crazy cats</strong>
-                    <button class="btn btn-default">
+                    <a href="#" role="button" tabindex="-1" class="btn btn-default" data-toggle="popover" data-trigger="focus" title="You may want to follow">
                       <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                       Follow
-                    </button>
+                    </a>
                   </div>
                 </li>
                 <li>
                   <img src="imgs/ration.jpg" class="img-rounded">
                   <div class="info">
                     <strong>Free ration alert</strong>
-                    <button class="btn btn-default">
+                    <a href="#" role="button" tabindex="-1" class="btn btn-default" data-toggle="popover" data-trigger="focus" title="You may want to follow">
                       <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                       Follow
-                    </button>
+                    </a>
                   </div>
                 </li>
               </ul>
@@ -303,6 +313,82 @@
 
         </div>
 
+      </div>
+    </div>
+
+    <!-- modals 
+    <div class="modal-fade" id="tweet-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Dog a new tweet</h4>
+          </div>
+          <div class="modal-body">
+              <textarea class="form-control" rows="4" placeholder="What you want to bark?" maxlength="140"></textarea>
+          </div>
+          <div class="modal-footer">
+            <span class="char-count pull-left" data-max="140">140</span>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <div id="messages-modal" class="modal-fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Dog messages</h4>
+            <button type="button" class="btn btn-primary btn-message">New message</button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">
+                  <img src="imgs/laika.jpg" class="img-circle">
+                  <div class="msg-content">
+                    <h5>Laika <small>@spacesog</small></h5>
+                    <p>Hey Jonny, how is down there?</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="imgs/doge.jpg" class="img-circle">
+                  <div class="msg-content">
+                    <h5>Doge <small>@dogeoficial </small></h5>
+                    <p>Wow! How did I turned in to a meme?</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="imgs/cat.jpg" class="img-circle">
+                  <div class="msg-content">
+                    <h5>Cat <small>@crazycat</small></h5>
+                    <p>You will never catch me!</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="imgs/laika.jpg" class="img-circle">
+                  <div class="msg-content">
+                    <h5>Laika <small>@spacesog</small></h5>
+                    <p>I think I saw you in Jupiter! Have you been there recently?</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
