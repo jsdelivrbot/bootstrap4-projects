@@ -1,0 +1,148 @@
+.transition,
+.transition:hover,
+.transition:focus {
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+    background-color: #e5e9ec;
+}
+
+/*Left-Menu*/
+nav.navbar-fixed-top {
+    background-color: #FFF;
+    border: none;
+}
+nav .top-left-menu {
+    background-color: #252830;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand {
+    height: auto;
+}
+.navbar-brand h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #FFF;
+}
+nav .header-refresh {
+    margin-left: auto;
+    color: #FFF;
+}
+
+/*Search*/
+nav form#search {
+    padding: 0.9em;
+}
+nav form#search .input-group {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+nav form#search .input-group .form-control {
+    border-radius: 0.25em;
+    border: none;
+    width: 70%;
+    padding-left: 1.9em;
+    background-color: #F3F3F3;
+    box-shadow: none;
+}
+nav form#search .input-group .form-control:focus {
+    width: 100%;
+    box-shadow: none;
+}
+nav form#search .glyphicon-search {
+    z-index: 99;
+    left: 1.7em;
+}
+
+/*nav menu*/
+nav #nav-menu {
+    padding: 0.4em;
+    padding-right: 1em;
+}
+/*nav menu and notifications*/
+#nav-menu #btn-notifications > .badge {
+    color: #FFF;
+    background-color: #f35958;
+    font-size: 0.7em;
+    padding: 0.3rem 0.55rem 0.3rem 0.5rem;
+    position: absolute;
+    right: -0.4rem;
+    top: 1rem;
+    z-index: 99;
+}
+#btn-notifications .btn-link {
+    padding-top: 1.5rem;
+    color: #252830;
+    font-weight: 500;
+}
+#btn-notifications .btn-link:hover {
+    text-decoration: none;
+}
+#notification-list {
+    max-width: 20em;
+    overflow: auto;
+}
+#notification-list a {
+    display: -webkit-flex;
+    display: flex;
+    opacity: 0.7;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.3rem;
+    background-color: #EFEFEF;
+    position: relative;
+}
+#notification-list a:hover {
+    color: #262626;
+    text-decoration: none;
+    opacity: 1;
+}
+#notification-list img {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+#notification-list .notification-message {
+    display: inline-block;
+    white-space: normal;
+    min-width: 25rem;
+}
+#notification-list .badge:empty {
+    display: inline-block;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    background-color: #f35958;
+    height: 1.4rem;
+}
+#notification-list em.since {
+    font-size: 0.7rem;
+    color: #646C82;
+}
+
+/*Nav-Profile*/
+#nav-profile {
+    margin: 0.5em;
+    margin-left: 1em;
+}
+#nav-profile button.thumbnail {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#nav-profile img {
+    max-height: 2.3em;
+}
