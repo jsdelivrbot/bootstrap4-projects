@@ -35,11 +35,21 @@ $(document).ready(function(){
         $(this).append('ing');
     });
 
+    // for left side affix
     $('#profile').on('affix.bs.affix', function() {
         $(this).width($(this).width() - 1);
             $('#main').addClass('col-md-offset-3');
         }).on('affix-top.bs.affix', function() {
             $(this).css('width', '');
             $('#main').removeClass('col-md-offset-3');
+    });
+    // for right side affix
+    $('#right-content').on('affix.bs.affix', function() {
+        $(this).width($(this).width() - 1);
+        $('#right-content').addClass('col-md-offset-9');
+        $("#right-content").css("position", "relative");
+    }).on('affix-top.bs.affix', function() {
+        $(this).css('width', '');
+        $('#right-content').removeClass('col-md-offset-9');
     });
 });
