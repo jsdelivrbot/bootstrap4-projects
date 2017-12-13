@@ -7,6 +7,7 @@
     <title>Landing page</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/switchery.min.css">
     <link rel="stylesheet" href="css/base.css">
 
     <!--[if lt IE 9]>
@@ -229,7 +230,22 @@
               <div class="spider-chart"></div>
             </div>
           </div>
-
+          <div id="ration-stock" class="card">
+            <div class="card-block">
+              <h2>Ration stock info</h2>
+              <div class="stacked-area"></div>
+              <div class="switch">
+                View main stocks
+                <input type="checkbox" class="switchery" checked>
+                <div class="clearfix"></div>
+              </div>
+              <div class="switch">
+                Hide empty stocks
+                <input type="checkbox" class="switchery">
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -239,6 +255,7 @@
     <script src="js/jquery.easypiechart.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="js/switchery.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

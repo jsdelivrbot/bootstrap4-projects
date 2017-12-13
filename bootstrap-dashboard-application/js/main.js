@@ -56,4 +56,14 @@ $(document).ready(function(){
             color: '#f35958'
         }]
     });
+
+    // switchery plugin loading
+    var elems, switcheryOpts;
+    elems = Array.prototype.slice.call(document.querySelectorAll('.switchery'));
+    switcheryOpts = {
+        color: '#1bc98e'
+    };
+    elems.forEach(function(e){
+        var switchery = new Switchery(e, switcheryOpts);
+    });
 });

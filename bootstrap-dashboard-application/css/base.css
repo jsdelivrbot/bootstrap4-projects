@@ -315,3 +315,17 @@ nav #nav-menu {
     background-position: center;
     background-color: #e5e9ec;
 }
+
+/*ration-stock*/
+#ration-stock .stacked-area {
+    height: 200px;
+}
+#ration-stock .switch {
+    font-weight: 300;
+    color: #8b91a0;
+    padding: 0.5rem 0;
+}
+#ration-stock .switchery {
+    float: right;
+}
+
