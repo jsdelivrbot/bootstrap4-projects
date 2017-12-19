@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Landing page</title>
+    <title>Dashboard page</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/switchery.min.css">
@@ -244,6 +244,44 @@
                 <input type="checkbox" class="switchery">
                 <div class="clearfix"></div>
               </div>
+            </div>
+          </div>
+          <div id="real-time" class="card">
+            <div class="card-block">
+              <h2>Real time information</h2>
+              <ul class="list-unstyled">
+                <li>
+                  Active dogs: <span class="label label-warning pull-right">255</span>
+                </li>
+                <li>
+                  Silo status: <span class="badge ok pull-right">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </span>
+                </li>
+                <li>
+                  Usage level: 
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+                      <span class="sr-only">25%</span>
+                    </div>
+                    <div class="progress-bar progress-bar--warning progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%;">
+                      <span class="sr-only">38% alocated</span>
+                    </div>
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+                      <span class="sr-only">5% reserved</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  Free space: <span id="free-space:" class="pull-right">35%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="daily-usage" class="card">
+            <div class="card-block">
+              <h2>Daily usage</h2>
+              <div class="area-chart"></div>
             </div>
           </div>
         </div>
