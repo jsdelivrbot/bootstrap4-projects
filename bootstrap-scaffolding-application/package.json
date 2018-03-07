@@ -1,0 +1,37 @@
+{
+  "name": "bootstrap-scaffolding-application",
+  "version": "1.0.0",
+  "description": "Simple One Page Marketing Website Design powered by Bootstrap 4",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "bootsrap",
+    "panini",
+    "sass",
+    "gulp"
+  ],
+  "author": "Rahi Akela",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "gulp": "^3.9.1",
+    "gulp-bootlint": "^0.8.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-environments": "^0.1.2",
+    "gulp-html": "^0.4.7",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss-lint": "^0.6.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "mq4-hover-shim": "^0.3.0",
+    "panini": "^1.6.2",
+    "rimraf": "^2.6.2"
+  }
+}

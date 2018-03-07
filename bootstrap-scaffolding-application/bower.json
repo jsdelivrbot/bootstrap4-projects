@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-scaffolding-application",
+  "description": "Simple One Page Marketing Website Design powered by Bootstrap 4",
+  "main": "Gulpfile.js",
+  "authors": [
+    "Rahi Akela"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bootsrap",
+    "panini",
+    "sass",
+    "gulp"
+  ],
+  "homepage": "https://github.com/rahiakela/bootstrap4-projects",
+  "private": true,
+  "devDependencies": {
+    "bootstrap": "4"
+  }
+}
