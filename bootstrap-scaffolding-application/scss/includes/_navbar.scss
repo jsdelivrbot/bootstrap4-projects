@@ -1,0 +1,9 @@
+.navbar {
+    // background: transparent;
+    background: rgba(255,255,255,0.5);
+    // @include gradient-horizontal(green, white);
+}
+
+.bg-nature {
+    background: $navbar-background;
+}

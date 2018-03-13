@@ -4,6 +4,8 @@
   "description": "Simple One Page Marketing Website Design powered by Bootstrap 4",
   "main": "Gulpfile.js",
   "scripts": {
+    "build": "gulp deploy",
+    "start": "gulp",
     "test": "gulp test"
   },
   "keywords": [
