@@ -18,6 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^8.1.0",
+    "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-bootlint": "^0.8.1",
     "gulp-cached": "^1.1.1",
